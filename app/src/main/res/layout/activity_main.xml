@@ -1,31 +1,41 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
               android:layout_width="match_parent"
               android:layout_height="match_parent"
+              android:background="#fefefe"
               android:orientation="vertical">
 
-    <ViewSwitcher
-
-        android:id="@+id/my_switcher"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <TextView
-            android:id="@+id/clickable_text_view"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:clickable="true"
-            android:text="hello"/>
-
-        <EditText
-            android:id="@+id/hidden_edit_view"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="hello"/>
-    </ViewSwitcher>
-
-    <Button
-        android:id="@+id/change"
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Change"/>
+        android:layout_margin="10dp"
+        android:text="Career and Application Information"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Body2"
+        android:textColor="#ADC436"
+        android:textSize="20sp"/>
+
+    <TextView
+        style="@style/KeyText"
+        android:text="JobCategory"/>
+
+    <TextView
+        style="@style/ValueText"
+        android:text="IT and Telecommunication"/>
+
+    <TextView
+        style="@style/KeyText"
+        android:text="Looking For"/>
+
+    <TextView
+        style="@style/ValueText"
+        android:text="Mid Level"/>
+
+    <TextView
+        style="@style/KeyText"
+        android:text="Available For"/>
+
+    <TextView
+        style="@style/ValueText"
+        android:text="Full Time"/>
+
+
 </LinearLayout>
